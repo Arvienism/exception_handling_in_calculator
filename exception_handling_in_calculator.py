@@ -26,7 +26,7 @@ def addition():
 #           display the result for addition
         print(adding_number)
 #       Handle errors for ValueError
-    except:
+    except ValueError:
 #           tell the user that they inputted wrong data type
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
@@ -42,7 +42,7 @@ def substraction():
 #           display the result for substraction
         print(substracting_number)
 #       Handle errors for ValueError
-    except:
+    except ValueError:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
 def multiplication():
@@ -57,7 +57,7 @@ def multiplication():
 #           display the result for multiplication
         print(multiplying_number)
 #       Handle errors for ValueError
-    except:
+    except ValueError:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Division function to solve for division
 def division():
