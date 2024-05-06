@@ -107,6 +107,7 @@ def main():
 #               call Exit function if the user chosen number is 5
             elif chosen_menu_number == 5:
                 exit()
+                break
 #               Ask user if they want to try again
             try_again = input("Do you want to try again? (y/n): ").lower()
             if try_again != "y":
