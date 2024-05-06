@@ -30,12 +30,20 @@ def Addition():
 #           tell the user that they inputted wrong data type
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
+def Substraction():
 #       Test a block of code for errors
+    try:
 #           input the first number
+        first_number = int(input("Enter the first number"))
 #           input the second number
+        second_number = int(input("Enter the Second number: "))
 #           calculation for substraction - substract the first and second number
+        Substracting_number = first_number - second_number
 #           display the result for substraction
+        print(Substracting_number)
 #       Handle errors for ValueError
+    except:
+        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
 #       Test a block of code for errors
 #           input the first number
