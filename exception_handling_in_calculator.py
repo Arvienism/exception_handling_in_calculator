@@ -91,6 +91,7 @@ def main():
             menu()
 #               input the chosen number in the menu function
             chosen_menu_number = int(input("Enter Chosen Menu number: "))
+            print("")
 #               call Addition function if the user chosen number is 1
             if chosen_menu_number == 1:
                 menu()
