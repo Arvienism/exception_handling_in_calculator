@@ -34,7 +34,7 @@ def substraction():
 #       Test a block of code for errors
     try:
 #           input the first number
-        first_number = int(input("Enter the first number:"))
+        first_number = int(input("Enter the first number: "))
 #           input the second number
         second_number = int(input("Enter the Second number: "))
 #           calculation for substraction - substract the first and second number
