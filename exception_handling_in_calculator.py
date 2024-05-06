@@ -83,9 +83,9 @@ def exit():
     print("Thank you for using this Calculator")
 #   define main function to run the calculator
 def main():
-#       Test a block of code for errors
+#       create an infinite loop to let the user to continue using the calculator
     while True:
-#           create an infinite loop to let the user to continue using the calculator
+#           Test a block of code for errors
         try:
 #               call the menu function
             menu()
