@@ -12,7 +12,7 @@ def menu():
 #       display "4. Division"
     print("4. Division")
 #       display "5. EXIT the program"
-    print("Exit")
+    print("5. Exit")
 #   define Addition function to solve for addition
 def addition():
 #       Test a block of code for errors
