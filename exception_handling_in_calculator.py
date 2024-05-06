@@ -14,7 +14,7 @@ def menu():
 #       display "5. EXIT the program"
     print("Exit")
 #   define Addition function to solve for addition
-def Addition():
+def addition():
 #       Test a block of code for errors
     try:
 #           input the first number
@@ -30,7 +30,7 @@ def Addition():
 #           tell the user that they inputted wrong data type
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
-def Substraction():
+def substraction():
 #       Test a block of code for errors
     try:
 #           input the first number
@@ -45,7 +45,7 @@ def Substraction():
     except:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
-def Multiplication():
+def multiplication():
 #       Test a block of code for errors
     try:
 #           input the first number
