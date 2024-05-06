@@ -94,7 +94,7 @@ def main():
             print("")
 #               call Addition function if the user chosen number is 1
             if chosen_menu_number == 1:
-                menu()
+                addition()
 #               call Substraction function if the user chosen number is 2
             elif chosen_menu_number == 2:
                 substraction()
