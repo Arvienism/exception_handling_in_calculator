@@ -22,9 +22,9 @@ def Addition():
 #           input the second number
         second_number = int(input("Enter the Second number: "))
 #           calculation for addition - add the first and second number
-        Adding_number = first_number + second_number
+        adding_number = first_number + second_number
 #           display the result for addition
-        print(Adding_number)
+        print(adding_number)
 #       Handle errors for ValueError
     except:
 #           tell the user that they inputted wrong data type
@@ -38,9 +38,9 @@ def Substraction():
 #           input the second number
         second_number = int(input("Enter the Second number: "))
 #           calculation for substraction - substract the first and second number
-        Substracting_number = first_number - second_number
+        substracting_number = first_number - second_number
 #           display the result for substraction
-        print(Substracting_number)
+        print(substracting_number)
 #       Handle errors for ValueError
     except:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
