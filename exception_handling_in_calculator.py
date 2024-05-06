@@ -78,7 +78,9 @@ def division():
     except ZeroDivisionError:
         print('"UNDEFINED" You are dividing it to zero')
 #   define exit function to stop the calculator
+def exit():
 #       display thank you message
+    print("Thank you for using this Calculator")
 #   define main function to run the calculator
 #       Test a block of code for errors
 #           create an infinite loop to let the user to continue using the calculator
