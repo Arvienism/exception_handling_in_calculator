@@ -45,12 +45,20 @@ def Substraction():
     except:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
+def Multiplication():
 #       Test a block of code for errors
+    try:
 #           input the first number
+        first_number = int(input("Enter the first number"))
 #           input the second number
+        second_number = int(input("Enter the Second number: "))
 #           calculation for multiplication - multiply the first and second number
+        multiplying_number = first_number * second_number
 #           display the result for multiplication
+        print(multiplying_number)
 #       Handle errors for ValueError
+    except:
+        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Division function to solve for division
 #       Test a block of code for errors
 #           input the first number
