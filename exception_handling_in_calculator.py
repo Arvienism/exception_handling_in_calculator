@@ -14,13 +14,21 @@ def menu():
 #       display "5. EXIT the program"
     print("Exit")
 #   define Addition function to solve for addition
+def Addition():
 #       Test a block of code for errors
+    try:
 #           input the first number
+        first_number = int(input("Enter the First number: "))
 #           input the second number
+        second_number = int(input("Enter the Second number: "))
 #           calculation for addition - add the first and second number
+        Adding_number = first_number + second_number
 #           display the result for addition
+        print(Adding_number)
 #       Handle errors for ValueError
+    except:
 #           tell the user that they inputted wrong data type
+        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
 #       Test a block of code for errors
 #           input the first number
