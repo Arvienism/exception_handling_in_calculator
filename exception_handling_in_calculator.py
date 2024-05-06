@@ -82,16 +82,39 @@ def exit():
 #       display thank you message
     print("Thank you for using this Calculator")
 #   define main function to run the calculator
+def main():
 #       Test a block of code for errors
+    try:
 #           create an infinite loop to let the user to continue using the calculator
+        while True:
 #               call the menu function
+            menu()
 #               input the chosen number in the menu function
+            chosen_menu_number = int(input("Enter Chosen Menu number: "))
 #               call Addition function if the user chosen number is 1
+            if chosen_menu_number == 1:
+                menu()
 #               call Substraction function if the user chosen number is 2
+            elif chosen_menu_number == 2:
+                substraction()
 #               call Multiplication function if the user chosen number is 3
+            elif chosen_menu_number == 3:
+                multiplication()
 #               call Division function if the user chosen number is 4
+            elif chosen_menu_number == 4:
+                division()
 #               call Exit function if the user chosen number is 5
+            elif chosen_menu_number == 5:
+                exit()
 #               Ask user if they want to try again
+            try_again = input("Do you want to try again? (y/n): ").lower()
+            if try_again != "y":
 #               display "Thank you!"
+                print("Thank you for using this Calculator")
+                break
+
 #       Handle errors for ValueError
+    except ValueError:
+        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+main()
 # end:
