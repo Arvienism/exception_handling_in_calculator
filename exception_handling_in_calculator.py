@@ -1,11 +1,18 @@
 # start: 
 #   define a menu function to display the calculator menu
+def menu():
 #       display "Calculator Menu"- add some astig effect!
+    print("Calculator MENU")
 #       display "1. Addition"
+    print("1. Addition")
 #       display "2. Substraction"
+    print("2. Substraction")
 #       display "3. Multiplication"
+    print("3. Multiplication")
 #       display "4. Division"
+    print("4. Division")
 #       display "5. EXIT the program"
+    print("Exit")
 #   define Addition function to solve for addition
 #       Test a block of code for errors
 #           input the first number
