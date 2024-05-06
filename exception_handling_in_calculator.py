@@ -60,13 +60,23 @@ def multiplication():
     except:
         print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Division function to solve for division
+def division():
 #       Test a block of code for errors
+    try:
 #           input the first number
+        first_number = int(input("Enter the first number"))
 #           input the second number
+        second_number = int(input("Enter the Second number: "))
 #           calculation for division - divide the first and second number
+        dividing_number = first_number / second_number
 #           display the result for division 
+        print(dividing_number)
 #       Handle errors for ValueError
+    except ValueError:
+        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
 #       Handle errors for ZeroDivisionError
+    except ZeroDivisionError:
+        print('"UNDEFINED" You are dividing it to zero')
 #   define main function to run the calculator
 #       Test a block of code for errors
 #           create an infinite loop to let the user to continue using the calculator
