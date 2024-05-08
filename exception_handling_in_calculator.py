@@ -1,18 +1,21 @@
 # start: 
+from colorama import init, Fore, Style
+
+init(autoreset=True)
 #   define a menu function to display the calculator menu
 def menu():
 #       display "Calculator Menu"- add some astig effect!
-    print("Calculator MENU")
+    print(Fore.YELLOW + Style.BRIGHT + "Calculator MENU")
 #       display "1. Addition"
-    print("1. Addition")
+    print(Fore.GREEN + "1. Addition")
 #       display "2. Substraction"
-    print("2. Substraction")
+    print(Fore.GREEN + "2. Substraction")
 #       display "3. Multiplication"
-    print("3. Multiplication")
+    print(Fore.GREEN + "3. Multiplication")
 #       display "4. Division"
-    print("4. Division")
+    print(Fore.GREEN + "4. Division")
 #       display "5. EXIT the program"
-    print("5. Exit")
+    print(Fore.RED + "5. Exit")
 #   define Addition function to solve for addition
 def addition():
 #       Test a block of code for errors
@@ -28,7 +31,7 @@ def addition():
 #       Handle errors for ValueError
     except ValueError:
 #           tell the user that they inputted wrong data type
-        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
 def substraction():
 #       Test a block of code for errors
@@ -43,7 +46,7 @@ def substraction():
         print(substracting_number)
 #       Handle errors for ValueError
     except ValueError:
-        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
 def multiplication():
 #       Test a block of code for errors
@@ -58,7 +61,7 @@ def multiplication():
         print(multiplying_number)
 #       Handle errors for ValueError
     except ValueError:
-        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
 #   define Division function to solve for division
 def division():
 #       Test a block of code for errors
@@ -73,14 +76,14 @@ def division():
         print(dividing_number)
 #       Handle errors for ValueError
     except ValueError:
-        print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
 #       Handle errors for ZeroDivisionError
     except ZeroDivisionError:
-        print('"UNDEFINED" You are dividing it to zero')
+        print(Fore.RED + Style.BRIGHT + '"UNDEFINED" You are dividing it to zero')
 #   define exit function to stop the calculator
 def exit():
 #       display thank you message
-    print("Thank you for using this Calculator")
+    print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "Thank you for using this Calculator")
 #   define main function to run the calculator
 def main():
 #       create an infinite loop to let the user to continue using the calculator
@@ -109,8 +112,8 @@ def main():
                 exit()
                 break
             else:
-                print("Please, choose only the given number in the MENU!" + "\n"
-                      '"1" for Addition' + "\n"
+                print(Fore.RED + Style.BRIGHT + "Please, choose only the given number in the MENU!" + "\n"
+                      + Fore.GREEN + Style.NORMAL + '"1" for Addition' + "\n"
                       '"2" for Substraction' + "\n"
                       '"3" for Multiplication' + "\n"
                       '"4" for Division' + "\n"
@@ -119,11 +122,11 @@ def main():
             try_again = input("Do you want to try again? (y/n): ").lower()
             if try_again != "y":
 #               display "Thank you!"
-                print("Thank you for using this Calculator")
+                print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "Thank you for using this Calculator")
                 break
 
 #       Handle errors for ValueError
         except ValueError:
-            print('"VALUE ERROR!" Please use INTEGERS ONLY!')
+            print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
 main()
 # end:
