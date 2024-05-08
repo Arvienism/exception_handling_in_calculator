@@ -1,7 +1,6 @@
 # start: 
 from colorama import init, Fore, Style
 import pyfiglet
-import pyfiglet.fonts
 
 init(autoreset=True)
 #   define a menu function to display the calculator menu
