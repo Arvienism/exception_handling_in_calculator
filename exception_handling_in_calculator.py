@@ -1,11 +1,13 @@
 # start: 
 from colorama import init, Fore, Style
+import pyfiglet
+import pyfiglet.fonts
 
 init(autoreset=True)
 #   define a menu function to display the calculator menu
 def menu():
 #       display "Calculator Menu"- add some astig effect!
-    print(Fore.YELLOW + Style.BRIGHT + "Calculator MENU")
+    print(Fore.YELLOW + Style.BRIGHT + pyfiglet.figlet_format("Calculator MENU", font="puffy"))
 #       display "1. Addition"
     print(Fore.GREEN + "1. Addition")
 #       display "2. Substraction"
@@ -31,7 +33,7 @@ def addition():
 #       Handle errors for ValueError
     except ValueError:
 #           tell the user that they inputted wrong data type
-        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLY!')
 #   define Subtraction function to solve for substraction
 def substraction():
 #       Test a block of code for errors
@@ -46,7 +48,7 @@ def substraction():
         print(substracting_number)
 #       Handle errors for ValueError
     except ValueError:
-        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLY!')
 #   define Multiplication function to solve for multiplication
 def multiplication():
 #       Test a block of code for errors
@@ -61,7 +63,7 @@ def multiplication():
         print(multiplying_number)
 #       Handle errors for ValueError
     except ValueError:
-        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLY!')
 #   define Division function to solve for division
 def division():
 #       Test a block of code for errors
@@ -76,14 +78,14 @@ def division():
         print(dividing_number)
 #       Handle errors for ValueError
     except ValueError:
-        print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
+        print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLY!')
 #       Handle errors for ZeroDivisionError
     except ZeroDivisionError:
         print(Fore.RED + Style.BRIGHT + '"UNDEFINED" You are dividing it to zero')
 #   define exit function to stop the calculator
 def exit():
 #       display thank you message
-    print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "Thank you for using this Calculator")
+    print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + pyfiglet.figlet_format("Thank you for using this Calculator", font="puffy"))
 #   define main function to run the calculator
 def main():
 #       create an infinite loop to let the user to continue using the calculator
@@ -122,11 +124,11 @@ def main():
             try_again = input("Do you want to try again? (y/n): ").lower()
             if try_again != "y":
 #               display "Thank you!"
-                print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "Thank you for using this Calculator")
+                print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + pyfiglet.figlet_format("Thank you for using this Calculator", font="puffy"))
                 break
 
 #       Handle errors for ValueError
         except ValueError:
-            print(Fore.RED + Style.BRIGHT + '"VALUE ERROR!" Please use INTEGERS ONLY!')
+            print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLYY!')
 main()
 # end:
