@@ -80,7 +80,7 @@ def division():
         print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("VALUE ERROR!", font="puffy") + 'Please use INTEGERS ONLY!')
 #       Handle errors for ZeroDivisionError
     except ZeroDivisionError:
-        print(Fore.RED + Style.BRIGHT + '"UNDEFINED" You are dividing it to zero')
+        print(Fore.RED + Style.BRIGHT + pyfiglet.figlet_format("UNDEFINED!", font="puffy") + 'You are dividing it to zero')
 #   define exit function to stop the calculator
 def exit():
 #       display thank you message
